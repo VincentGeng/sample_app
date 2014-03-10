@@ -3,6 +3,14 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 
+# Solution for uninitialized constant Capybara (NameError)
+gem 'capybara' 
+gem 'database_cleaner'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 2.14.1'
+end
+
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 gem 'guard-rspec', '2.5.0'
@@ -44,3 +52,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
