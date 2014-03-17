@@ -3,6 +3,10 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 
+# 哈希函数 bcrypt 对密码进行不可逆的加密，得到密码的哈希值
+gem 'bcrypt', '3.1.7'
+gem 'bcrypt-ruby', '~> 3.1.2'
+
 #Gem for Bootstrap
 gem 'bootstrap-sass', '2.3.2.0'
 
