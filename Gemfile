@@ -5,6 +5,7 @@ gem 'rails', '4.0.3'
 
 # 哈希函数 bcrypt 对密码进行不可逆的加密，得到密码的哈希值
 gem 'bcrypt', '3.1.7'
+# Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
 
 #Gem for Bootstrap
@@ -16,6 +17,7 @@ gem 'database_cleaner'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.14.1'
+  gem 'factory_girl_rails', '4.2.1'
 end
 
 # Use sqlite3 as the database for Active Record
@@ -47,9 +49,6 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
 # gem 'unicorn'
