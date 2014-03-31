@@ -13,11 +13,13 @@ gem 'bootstrap-sass', '2.3.2.0'
 
 # Solution for uninitialized constant Capybara (NameError)
 gem 'capybara' 
-gem 'database_cleaner'
+# gem 'database_cleaner'
 
 group :development, :test do
   gem 'rspec-rails', '~> 2.14.1'
   gem 'factory_girl_rails', '4.2.1'
+  gem 'cucumber-rails', '1.4.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 # Use sqlite3 as the database for Active Record
@@ -58,5 +60,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'multi_test', '~> 0.1.1'
 
 
