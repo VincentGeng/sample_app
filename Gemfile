@@ -8,8 +8,16 @@ gem 'bcrypt', '3.1.7'
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
 
-#Gem for Bootstrap
+# Gem for Bootstrap
 gem 'bootstrap-sass', '2.3.2.0'
+
+# 使用这个 gem，我们可以使用半真实的名字和 Email 地址创建示例用户
+gem 'faker', '1.1.2'
+
+# bootstrap-will_paginate 的作用是设置 will_paginate 使用 Bootstrap 中的分页样式
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.10'
+
 
 # Solution for uninitialized constant Capybara (NameError)
 gem 'capybara' 
